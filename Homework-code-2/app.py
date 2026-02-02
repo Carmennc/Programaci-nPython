@@ -11,7 +11,7 @@ app = Flask(__name__)
 
 
 app.config['JWT_SECRET_KEY'] = 'informacion-privada'
-app.config["JWT_ACCESS_TOKEN_EXPIRES"] = timedelta(minutes=5)
+app.config["JWT_ACCESS_TOKEN_EXPIRES"] = timedelta(minutes=6)
 
 jwt = JWTManager(app)
 host = 'mongodb://localhost'

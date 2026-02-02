@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="row">
+   {% for planta in plantas %}
+   <div class="col-md-6 mb-3">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title"> {{planta.name}}</h5>
+                <p class="card-text"> {{planta.description}}</p>
+                <p> <strong>Precio desde</strong>: ${{planta.price_starting}}</p>
+                 <p> <strong>plantas disponibles</strong>: {{planta.planta_types}}</p>
+            </div>
+        </div>
+   </div>  
+   {% endfor %}
+</div>
+{% endblock %}
